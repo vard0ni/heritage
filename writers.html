@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем Bootstrap CSS файлы -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Писатели - Великое наследие искусства</title>
+</head>
+<style>
+  .header-person {
+    color: #40E0D0; /* Код цвета для красного (#FF0000) */
+  }
+  .book-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .book-image {
+      flex: 0 0 200px;
+      margin-right: 20px;
+    }
+
+    .book-description {
+      flex: 1;
+    }
+</style>
+<body>
+	<!-- Шапка сайта -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>+
+      	</button>
+      	<div class="collapse navbar-collapse" id="navbarNav">
+       		<ul class="navbar-nav">
+         		<li class="nav-item">
+            		<a class="nav-link" href="directors.html">Режисёры</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="composers.html">Композиторы</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="artists.html">Художники</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link active" href="writers.html">Писатели</a>
+         		</li>
+       		</ul>
+      	</div>
+	</nav>
+
+	<!-- Страница Писатели -->
+	<div class="container">
+		<h2 class="text-center text-uppercase header-person">Писатели</h2><br><br>
+		<div id="directors-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/mann.jpg" class="card-img-top" alt="Thomas Mann">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/232293-tomas-mann" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Томас Манн</a></h5>
+						<p class="card-text">1875 - 1955</p>
+						<p class="card-text">Немецкий писатель, эссеист, мастер эпического романа, лауреат Нобелевской премии по литературе (1929)</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#thomas-mann-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/shakespeare.jpg" class="card-img-top" alt="William Shakespeare">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/736-uilyam-shekspir" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Уильям Шекспир</a></h5>
+						<p class="card-text">1564 - 1616</p>
+						<p class="card-text">Английский поэт и драматург, зачастую считается величайшим англоязычным писателем и одним из лучших драматургов мира.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#shakespeare-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/brodsky.jpg" class="card-img-top" alt="Iosif Brodsky">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/78-iosif-brodskij" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Иосиф Бродский</a></h5>
+						<p class="card-text">1940 - 1996</p>
+						<p class="card-text">Русский и американский поэт, эссеист, драматург, переводчик, педагог. Лауреат Нобелевской премии по литературе 1987 года, поэт-лауреат США в 1991—1992 годах.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#brodsky-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/oscar.jpg" class="card-img-top" alt="Oscar Wilde">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/3375-oskar-uajld" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Оскар Уайльд</a></h5>
+						<p class="card-text">1854 - 1900</p>
+						<p class="card-text">Ирландский писатель и поэт. Один из самых известных драматургов позднего Викторианского периода, одна из ключевых фигур эстетизма и европейского модернизма.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#oscar-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/fitsdzherald.jpeg" class="card-img-top" alt="Francis Scott Fitzgerald">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/6180-frensis-skott-fitsdzherald" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Фрэ́нсис Фицдже́ральд</a></h5>
+						<p class="card-text">1896 - 1940</p>
+						<p class="card-text">Американский писатель, крупнейший представитель так называемого «потерянного поколения» в литературе.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#fitzgerald-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/mark.jpg" class="card-img-top" alt="Mark Twain">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/669-mark-tven" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Марк Твен</a></h5>
+						<p class="card-text">1835 - 1910</p>
+						<p class="card-text">Американский писатель, юморист, журналист и общественный деятель. Его творчество охватывает множество жанров — юмор, сатиру, философскую фантастику, публицистику ...</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#mark-twain-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/writers/maugham.jpg" class="card-img-top" alt="Somerset Maugham">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/122-somerset-moem" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Сомерсет Моэм</a></h5>
+						<p class="card-text">1874 - 1965</p>
+						<p class="card-text">Английский писатель, пик популярности которого пришёлся на 1920-30г. В качестве агента британской разведки с августа по ноябрь 1917г находился с миссией в России.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#maugham-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+				<div class="card h-100">
+					<img src="img/writers/mishima.jpg" class="card-img-top" alt="Yukio Mishima">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.livelib.ru/author/88-yukio-misima" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Юкио Мисима</a></h5>
+						<p class="card-text">1925 - 1970</p>
+						<p class="card-text">Японский писатель, поэт, драматург, актёр, модель, синтоист, националист и основатель Татенокаи(Общество щита), невооруженного гражданского ополчения.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#yukio-mishima-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+          </div>
+        </div>
+        <!-- Добавьте необходимое количество carousel-item для остальных режиссеров -->
+      </div>
+      <a class="carousel-control-prev" href="#directors-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#directors-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a class="page-link" href="#directors-carousel" data-slide-to="0">1</a></li>
+      <li class="page-item"><a class="page-link" href="#directors-carousel" data-slide-to="1">2</a></li>
+      <!-- Добавьте необходимое количество page-item для остальных страниц -->
+    </ul>
+	</div>
+
+	<div class="container">
+  <div class="book-container">
+    <div class="book-image">
+      <img src="https://img4.labirint.ru/rc/c2e59e9bd2850dd95b1b734d4926f4e3/363x561q80/books62/610816/cover.png?1575386877" alt="Book 1">
+    </div>
+    <div class="book-description">
+      <h2>Фридрих Шиллер: Мария Стюарт</h2>
+      <p>«Мария Стюарт» - это историческая драма о жизни и судьбе одной из самых известных королев Великобритании. Она рассказывает о борьбе за власть, интригах и страстях, которые сопровождали жизнь Марии Стюарт.</p>
+    </div>
+  </div>
+
+  <div class="book-container">
+    <div class="book-description">
+      <h2>Фрэнсис Фицджеральд: Великий Гэтсби</h2>
+      <p>«Великий Гэтсби» - это роман, который олицетворяет американскую мечту, стремление к успеху и богатству. Он рассказывает историю Джей Гэтсби, таинственного миллионера, и его любви к женщине по имени Дейзи.</p>
+    </div>
+    <div class="book-image">
+      <img src="https://img3.labirint.ru/rc/516310b19b0a04e42ddcb17109daaa3f/363x561q80/books97/960029/cover.jpg?1693977928" alt="Book 2">
+    </div>
+  </div>
+
+  <div class="book-container">
+    <div class="book-image">
+      <img src="https://img4.labirint.ru/rc/cef9a288c92da091f298de4662cb690b/363x561q80/books79/786916/cover.png?1620977192" alt="Book 3">
+    </div>
+    <div class="book-description">
+      <h2>Марк Твен: Простаки за границей</h2>
+      <p>«Простаки за границей» - это роман-путешествие, в котором главные герои отправляются в путешествие по Европе. Книга описывает их приключения, встречи с разными культурами и столкновениями с непредсказуемыми ситуациями.</p>
+    </div>
+  </div>
+
+  <div class="book-container">
+    <div class="book-description">
+      <h2>Джордж Оруэлл: 1984</h2>
+      <p>«1984» - это дистопический роман, который описывает тоталитарное общество, где правительство контролирует каждый аспект жизни граждан. Книга поднимает вопросы свободы, приватности и индивидуальности.</p>
+    </div>
+    <div class="book-image">
+      <img src="https://img4.labirint.ru/rc/95b18bd674e3077442d0f3e7ad53f957/363x561q80/books80/790566/cover.png?1618316737" alt="Book 4">
+    </div>
+  </div>
+
+  <div class="book-container">
+    <div class="book-image">
+      <img src="https://img3.labirint.ru/rc/accdd8826a8afce672e753f45c8979f1/363x561q80/books86/852771/cover.png?1688203519" alt="Book 5">
+    </div>
+    <div class="book-description">
+      <h2>Джейн Остин: Гордость и предубеждение</h2>
+      <p>«Гордость и предубеждение» - это классический роман, который рассказывает историю Элизабет Беннет и ее семьи. Книга исследует темы любви, предрассудков, социальных норм и роли женщин в обществе.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Томас Манн -->
+<div class="modal fade" id="thomas-mann-modal" tabindex="-1" role="dialog" aria-labelledby="thomas-mann-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="thomas-mann-modal-label">Томас Манн</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/mann_2.jpeg" class="img-fluid mb-3" alt="Thomas Mann">
+				<p>Томас Манн был немецким писателем и лауреатом Нобелевской премии по литературе. Он родился в Любеке, Германия. Манн известен своими романами, включая "Будденброки", "Конфессия Феликса Крулла" и "Магическая гора". Его произведения часто затрагивают темы морали, эстетики и духовного разложения в обществе. Манн является одним из величайших немецких писателей XX века.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Уильям Шекспир -->
+<div class="modal fade" id="shakespeare-modal" tabindex="-1" role="dialog" aria-labelledby="shakespeare-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="shakespeare-modal-label">Уильям Шекспир</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/shakespeare_2.jpg" class="img-fluid mb-3" alt="William Shakespeare">
+				<p>Уильям Шекспир был английским драматургом и поэтом, считающимся одним из величайших писателей в истории. Он родился в Стратфорде-апон-Эйвоне, Англия. Шекспир автор более 30 пьес, включая "Гамлет", "Ромео и Джульетту" и "Макбет". Его произведения отличаются мастерством характеризации, богатством языка и универсальностью тем, которые он касается.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Иосиф Бродский -->
+<div class="modal fade" id="brodsky-modal" tabindex="-1" role="dialog" aria-labelledby="brodsky-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="brodsky-modal-label">Иосиф Бродский</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/brodsky_2.jpg" class="img-fluid mb-3" alt="Iosif Brodsky">
+				<p>Иосиф Бродский был российским поэтом, эссеистом и лауреатом Нобелевской премии по литературе. Он родился в Ленинграде, СССР (ныне Санкт-Петербург, Россия). Бродский был известен своими глубокими и философскими стихами, которые часто затрагивали темы смерти, любви и человеческого существования. Он также был известен своими эссе, в которых он выражал свои мысли о литературе и искусстве.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Оскар Уайльд -->
+<div class="modal fade" id="oscar-modal" tabindex="-1" role="dialog" aria-labelledby="oscar-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="oscar-modal-label">Оскар Уайльд</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/oscar_2.jpg" class="img-fluid mb-3" alt="Oscar Wilde">
+				<p>Оскар Уайльд был ирландским писателем, драматургом и поэтом. Он родился в Дублине, Ирландия. Уайльд известен своими остроумными комедиями, такими как "Идеальный муж" и "Веер леди Виндермир". Он также написал один из своих наиболее известных произведений, роман "Портрет Дориана Грея". Уайльд был известен своим проницательным юмором и критикой общественных норм.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Фрэ́нсис Фицдже́ральд -->
+<div class="modal fade" id="fitzgerald-modal" tabindex="-1" role="dialog" aria-labelledby="fitzgerald-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="fitzgerald-modal-label">Фрэ́нсис Фицдже́ральд</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/fitzgerald_2.jpg" class="img-fluid mb-3" alt="Francis Scott Fitzgerald">
+				<p>Фрэнсис Фицджеральд был американским писателем, известным своим романом "Великий Гэтсби". Он родился в Сент-Поле, Миннесота, США. Фицджеральд считается одним из величайших писателей "потерянного поколения". Его произведения часто отражают атмосферу "джазовой эпохи" в Америке и затрагивают темы американской мечты, богатства и разочарования.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Марк Твен -->
+<div class="modal fade" id="mark-twain-modal" tabindex="-1" role="dialog" aria-labelledby="mark-twain-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="mark-twain-modal-label">Марк Твен</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/mark_2.jpg" class="img-fluid mb-3" alt="Mark Twain">
+				<p>Марк Твен был американским писателем и юмористом. Его настоящее имя — Сэмюэл Ленгхорн Клеменс. Он родился во Флориде, Миссури, США. Марк Твен наиболее известен своими произведениями "Приключения Тома Сойера" и "Приключения Гекльберри Финна". Его работы часто затрагивают темы детства, приключений, социальной справедливости и критикуют расовую дискриминацию.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Сомерсет Моэм -->
+<div class="modal fade" id="maugham-modal" tabindex="-1" role="dialog" aria-labelledby="maugham-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="maugham-modal-label">Сомерсет Моэм</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/maugham_2.jpg" class="img-fluid mb-3" alt="Somerset Maugham">
+				<p>Сомерсет Моэм был британским писателем и драматургом. Его настоящее имя — Уильям Сомерсет Моэм. Он родился в Париже, Франция. Моэм известен своими романами, включая "Человек-амфибия", "Каскадеры" и "Разумеется, Мистер Мозли". Его произведения часто исследуют темы человеческой природы, морали и этики.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Юкио Мисима -->
+<div class="modal fade" id="yukio-mishima-modal" tabindex="-1" role="dialog" aria-labelledby="yukio-mishima-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="yukio-mishima-modal-label">Юкио Мисима</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/writers/mishima_2.jpg" class="img-fluid mb-3" alt="Yukio Mishima">
+				<p>Юкио Мисима был японским писателем, драматургом и активистом. Его настоящее имя — Кидзиро Хара. Он родился в Токио, Япония. Мисима считается одним из величайших японских писателей XX века. Его произведения, такие как "Морской прилив и здесь и там" и "Золотой павлин", часто затрагивают темы смерти, эстетики, сексуальности и традиций японской культуры. Мисима также был известен своими эксцентричными взглядами и совершении сеппуку (японского ритуального самоубийства) после неудачного покушения на военный переворот.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- Футер сайта -->
+	<footer class="footer mt-auto py-3">
+		<div class="container text-center">
+			<span class="text-muted">&copy; 2023, Великое наследие искусства</span>
+		</div>
+	</footer>
+
+	<!-- Подключаем Bootstrap JavaScript файлы -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

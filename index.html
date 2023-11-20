@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем Bootstrap CSS файлы -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Великое наследие искусства</title>
+</head>
+<body>
+
+	<!-- Шапка сайта -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand active" href="index.html">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      	</button>
+      	<div class="collapse navbar-collapse" id="navbarNav">
+       		<ul class="navbar-nav">
+         		<li class="nav-item">
+            		<a class="nav-link" href="directors.html">Режисёры</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="composers.html">Композиторы</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="artists.html">Художники</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="writers.html">Писатели</a>
+         		</li>
+       		</ul>
+      	</div>
+	</nav>
+
+	<!-- Главная страница -->
+	<div class="container" >
+		<div class="jumbotron">
+			<img src="img/main.png">
+			<h1 class="display-4">Великое наследие искусства</h1>
+			<p class="lead">Здесь вы можете познакомиться с величайшими персонами, которые внесли огромный вклад в развитие искусства. </p>
+			<hr class="my-4">
+			<p>Выберите интересующую вас категорию:
+				<a href="directors.html" style="color:#17A2B8;">режисёры</a>,
+				<a href="composers.html" style="color:#17A2B8;">композиторы</a>,
+				<a href="artists.html" style="color:#17A2B8;">художники</a>,
+				<a href="writers.html" style="color:#17A2B8;">писатели</a>.
+			</p>
+			<br>
+			<p>
+				Если у Вас есть предложения или какой-то вопрос по работе сайта, свяжитесь, пожалуйста, по e-mail: <a href="#" style="color:#17A2B8;">ip_goose@mail.ru</a>
+			</p>
+		</div>
+
+		<!-- Контейнер со стихами -->
+		<div class="container text-center">
+  			<h2>Русская поэзия</h2>
+  			<p>Поэзия и искусство — это особая форма не только выражения, но и познания.</p>
+
+  			<!-- Карусель со стрелочками -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="15000">
+    			<div class="carousel-inner">
+      				<!-- Первый слайд -->
+      				<div class="carousel-item active">
+        				<blockquote class="carousel-quote">
+          					<p>Становится радостью, истом и сладостью<br>
+            					То, что сотворено великими руками<br>
+            					Что трепетнох и звонкох и светлох и блистающех<br>
+            					И сияюще, и полночи и полднями...</p>
+          					<footer class="blockquote-footer">Александр Блок</footer>
+        				</blockquote>
+      				</div>
+      				<!-- Второй слайд -->
+      				<div class="carousel-item">
+        				<blockquote class="carousel-quote">
+          					<p>Плачь, о Дон Рождества! Судьбы наших грош цена.<br>
+            					Мы рождены не в те годы, но поэзия нас не покинула.<br>
+            					Прилетайте, музы, в наши вечера, к девушкам на пирушки.<br>
+								Зато и мы знаем, что значит: муза, поэзия, музыка.</p>
+          					<footer class="blockquote-footer">Владимир Маяковский</footer>
+        				</blockquote>
+      				</div>
+      				<!-- Третий слайд -->
+      				<div class="carousel-item">
+        				<blockquote class="carousel-quote">
+							<p>Я к вам пишу — чего же боле?<br>
+            					Что я могу еще сказать?<br>
+            					Теперь, я знаю, вам все равно: вас обижать — такое дело.<br>
+								Но вы меня, наверно, вспомните<br>
+            					И примите вас впустую —<br>
+            					Что я, дурень, вам сказать могу?</p>
+          					<footer class="blockquote-footer">Сергей Есенин</footer>
+        				</blockquote>
+      				</div>
+    			</div>
+    			<!-- Стрелочки для переключения слайдов -->
+    			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      				<span class="sr-only">Предыдущий</span>
+    			</a>
+    			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+      				<span class="sr-only">Следующий</span>
+    			</a>
+  			</div>
+		</div>
+	</div>
+
+	<div class="container text-center" >
+		<h2>Красивые кадры из фильмов</h2> <br>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qb0IlSBFVt0"></iframe>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J9_DymELOXs"></iframe>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kSiMyJyZsSY"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+  <script>
+    $(document).ready(function(){
+      // Активируем карусель
+      $("#myCarousel").carousel();
+    });
+  </script>
+
+
+	<!-- Футер сайта -->
+	<footer class="footer mt-auto py-3">
+		<div class="container text-center">
+			<span class="text-muted">&copy; 2023, Великое наследие искусства</span>
+		</div>
+	</footer>
+
+
+	<!-- Подключаем Bootstrap JavaScript файлы -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

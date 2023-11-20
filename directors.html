@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем Bootstrap CSS файлы -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Режисеры - Великое наследие искусства</title>
+</head>
+<style>
+  .header-person {
+    color: #40E0D0; /* Код цвета для красного (#FF0000) */
+  }
+</style>
+<body>
+	<!-- Шапка сайта -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      	</button>
+      	<div class="collapse navbar-collapse" id="navbarNav">
+       		<ul class="navbar-nav">
+         		<li class="nav-item">
+            		<a class="nav-link active" href="directors.html">Режисёры</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="composers.html">Композиторы</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="artists.html">Художники</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="writers.html">Писатели</a>
+         		</li>
+       		</ul>
+      	</div>
+	</nav>
+	<!-- Страница Режисеры -->
+	<div class="container">
+		<h2 class="text-center text-uppercase header-person">Режисёры</h2><br><br>
+		<div id="directors-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/luchino_visconti.jpg" class="card-img-top" alt="Luchino Visconti">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/58803/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Луки́но Виско́нти</a></h5>
+						<p class="card-text">1906 - 1976</p>
+						<p class="card-text">Итальянский режиссёр оперного и драматического театра и кино.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#luchino-visconti-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/de_sika.jpg" class="card-img-top" alt="Vittorio De Sica">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/181844/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Витторио Де Сика</a></h5>
+						<p class="card-text">1901 - 1974</p>
+						<p class="card-text">Итальянский режиссёр и актёр, одна из ключевых фигур итальянского неореализма.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#vittorio_de_sica-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/federico_fellini.jpg" class="card-img-top" alt="Federico Fellini">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/148228/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Федери́ко Фелли́ни</a></h5>
+						<p class="card-text">1920 - 1993</p>
+						<p class="card-text">Итальянский кинорежиссёр и сценарист. Обладатель пяти премий «Оскар» и «Золотой пальмовой ветви» Каннского кинофестиваля.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#federico-fellini-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/michelangelo_antonioni.jpg" class="card-img-top" alt="Michelangelo Antonioni">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/98092/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Микела́нджело Антонио́ни</a></h5>
+						<p class="card-text">1912 - 2007</p>
+						<p class="card-text">Итальянский кинорежиссёр и сценарист, классик европейского авторского кино, которого называли «поэтом отчуждения и некоммуникабельности».</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#michelangelo-antonioni-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/eldar_ryazanov.jpg" class="card-img-top" alt="Eldar Ryazanov">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/224619/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Эльдар Рязанов</a></h5>
+						<p class="card-text">1927 - 2015</p>
+						<p class="card-text">Советский и российский кинорежиссёр, сценарист, актёр, поэт, драматург, телеведущий, педагог, продюсер.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#eldar-ryazanov-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/franco_zeffirelli.jpg" class="card-img-top" alt="Franco Zeffirelli">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/20617/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Фра́нко Дзеффире́лли</a></h5>
+						<p class="card-text">1923 - 2019</p>
+						<p class="card-text">Итальянский режиссёр театра, оперы и кино, сценарист, продюсер, художник.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#franco_zeffirelli-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/directors/luis_banuel.jpg" class="card-img-top" alt="Luis Buñuel">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/185595/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Луис Бунюэ́ль</a></h5>
+						<p class="card-text">1900 - 1983</p>
+						<p class="card-text">Испанский и мексиканский кинорежиссёр, карьера которого длилась почти пять десятилетий и связана со странами — Испанией, Мексикой и Францией.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#luis_bunuel-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+				<div class="card h-100">
+					<img src="img/directors/aleksandrov.jpg" class="card-img-top" alt="Grigori Aleksandrov">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://www.kinopoisk.ru/name/174227/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Григорий Александров</a></h5>
+						<p class="card-text">1903 - 1983</p>
+						<p class="card-text">Советский кинорежиссёр, сценарист, педагог. Герой Социалистического Труда (1973), народный артист СССР (1948), лауреат двух Сталинских премий.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#aleksandrov-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+          </div>
+        </div>
+        <!-- Добавьте необходимое количество carousel-item для остальных режиссеров -->
+      </div>
+      <a class="carousel-control-prev" href="#directors-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#directors-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a class="page-link" href="#directors-carousel" data-slide-to="0">1</a></li>
+      <li class="page-item"><a class="page-link" href="#directors-carousel" data-slide-to="1">2</a></li>
+      <!-- Добавьте необходимое количество page-item для остальных страниц -->
+    </ul>
+	</div>
+
+	<div class="container">
+		<h2>Список хороших фильмов</h2> <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/331/" target="_blank">
+          <img src="https://s0.rbk.ru/v6_top_pics/media/img/7/52/756196109001527.jpg" class="card-img-top" alt="Великий кадр 2">
+			</a>
+          <div class="card-body">
+            <h5 class="card-title">Гражданин Кейн (1941)</h5>
+            <p class="card-text">В шикарном поместье умирает газетный магнат Чарльз Фостер Кейн, роняя лишь одно слово: «Роузбад». Смерть Кейна вызывает бурную реакцию в обществе, и группа журналистов берётся узнать, кем же он был на самом деле, что он пережил за свою долгую, полную взлётов и падений, жизнь... И что всё-таки значит «Роузбад»?
+			</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/42222/" target="_blank">
+          <img src="https://tv.pgtrk.com/sites/default/files/styles/video480x270/public/hd5azgpt34xn.png" class="card-img-top" alt="Великий кадр 2">
+			</a>
+          <div class="card-body">
+            <h5 class="card-title">Театр (ТВ, 1978)</h5>
+            <p class="card-text">Великая актриса Джулия Ламберт внезапно понимает, что она, увы, стареет. Что может помочь женщине, у которой есть абсолютно все? Только новая любовь. И Джулия влюбляется в первого встречного: в амбициозного молодого человека, у которого за душой ни гроша. Так начинается новая жизнь - новый роман и новые слезы. А как же иначе?
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/42487/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/ru/0/08/Ubit_drakona_movie_poster.jpg" class="card-img-top" alt="Великий кадр 3">
+				</a>
+          <div class="card-body">
+            <h5 class="card-title">Убить дракона (1988)</h5>
+            <p class="card-text">Вот уже много лет город, в который попадает странствующий рыцарь Ланцелот, находится под властью Дракона. Долг рыцаря — сразиться с жестоким узурпатором. Но Бургомистр отговаривает его от поединка, объясняя, что люди не могут жить без диктатора.
+			</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/43515/" target="_blank"></a>
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/1581470/pub_5de6c12b1febd400b0cfe2ac_5de6c1a4b477bfde889031c2/scale_1200" class="card-img-top" alt="Великий кадр 4">
+          <div class="card-body">
+            <h5 class="card-title">Не горюй! (1969)</h5>
+            <p class="card-text">Советский комедийно-драматический художественный фильм, снятый в 1969 году режиссёром Георгием Данелией. Фильм представляет собой вольную экранизацию романа французского писателя Клода Тилье «Мой дядя Бенжамен», перенесённую в Грузию конца XIX — начала XX века.
+				</p>
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/61699/" target="_blank">
+          <img src="https://s.afisha.ru/mediastorage/29/db/4b42792cb4bb4428bf313192db29.jpg" class="card-img-top" alt="Великий кадр 3">
+				</a>
+          <div class="card-body">
+            <h5 class="card-title">Травиата (1982)</h5>
+            <p class="card-text">Октябрь, середина XIX века, Париж. Куртизанка Виолетта Валери устраивает один из вечеров в своём салоне. Ей представляют молодого человека, недавно приехавшего в Париж из провинции, Альфреда Жермона, который производит впечатление более внимательного и чуткого мужчины, чем её спутник барон Дуфоль.
+			</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4">
+			<a href="https://www.kinopoisk.ru/film/531/" target="_blank"></a>
+          <img src="https://cinematography.su/wp-content/uploads/2022/01/0-24-e1680344630377-1024x576.jpg" class="card-img-top" alt="Великий кадр 4">
+          <div class="card-body">
+            <h5 class="card-title">Дорога (1954)</h5>
+            <p class="card-text">Фильм о нечеловеческой жестокости и человеческом страдании, о непростых отношениях немножко сумасшедшей, немножко святой, взъерошенной, смешной, неуклюжей и нежной Джельсомины и мрачного, массивного, грубого и звероподобного Дзампано - женщины и мужчины, совершенно чуждых друг другу.
+				</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Модальное окно с подробной информацией о Лукино Висконти -->
+<div class="modal fade" id="luchino-visconti-modal" tabindex="-1" role="dialog" aria-labelledby="luchino-visconti-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="luchino-visconti-modal-label">Луки́но Виско́нти ди Модрóне</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/luchino_visconti_2.jpg" class="img-fluid mb-3" alt="Luchino Visconti">
+				<p>Лукино Висконти был итальянским кинорежиссером, сценаристом и продюсером. Он родился в Милане, Италия. Висконти был известен своими элегантными и роскошными фильмами, которые часто исследовали темы социального класса и истории. Некоторые из его наиболее известных работ включают фильмы "Основано на реальных событиях" (1960), "Люди и боги" (1964) и "Смерть в Венеции" (1971). Висконти также получил несколько престижных кинонаград, включая Каннский приз за лучший фильм за "Леопард" (1963).</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Федерико Феллини -->
+<div class="modal fade" id="federico-fellini-modal" tabindex="-1" role="dialog" aria-labelledby="federico-fellini-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="federico-fellini-modal-label">Федери́ко Фелли́ни</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/federico_fellini_2.jpg" class="img-fluid mb-3" alt="Federico Fellini">
+				<p>Федерико Феллини был итальянским режиссером и сценаристом, одним из наиболее известных и влиятельных фигур в истории кино. Он родился в Риме, Италия. Феллини славился своими фантастическими и метафоричными фильмами, которые часто обращались к темам сновидений, памяти и итальянской культуры. Некоторые из его наиболее известных работ включают фильмы "Сладкая жизнь" (1960), "8½" (1963) и "Амаркорд" (1973). Феллини получил множество престижных наград, включая четыре Оскара за лучший иностранный фильм.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Микеланджело Антониони -->
+<div class="modal fade" id="michelangelo-antonioni-modal" tabindex="-1" role="dialog" aria-labelledby="michelangelo-antonioni-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="michelangelo-antonioni-modal-label">Микела́нджело Антонио́ни</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/michelangelo_antonioni_2.jpeg" class="img-fluid mb-3" alt="Michelangelo Antonioni">
+				<p>Микеланджело Антониони был итальянским режиссером и сценаристом, известным своими интеллектуальными и экспериментальными фильмами. Он родился в Ферраре, Италия. Антониони часто обращался к темам современной антропологии, социальной изоляции и коммуникации. Некоторые из его наиболее известных работ включают фильмы "Приключение" (1960), "Пустыня Тартар" (1976) и "Иди и смотри" (1985). Антониони получил множество наград, включая Золотую пальмовую ветвь на Каннском кинофестивале за фильм "Приключение".</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Эльдар Рязанов -->
+<div class="modal fade" id="eldar-ryazanov-modal" tabindex="-1" role="dialog" aria-labelledby="eldar-ryazanov-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="eldar-ryazanov-modal-label">Рязанов Эльдар Александрович</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/eldar_ryazanov_2.jpg" class="img-fluid mb-3" alt="Eldar Ryazanov">
+				<p>Эльдар Рязанов был советским и российским кинорежиссером и сценаристом. Он родился в Самаре, СССР (ныне Россия). Рязанов славился своими комедийными фильмами, которые затрагивали современные социальные и политические темы. Некоторые из его наиболее известных работ включают фильмы "Ирония судьбы, или С лёгким паром!"(1975), "Гараж" (1979) и "Зигзаг удачи" (1980). Рязанов получил множество наград, включая Государственную премию СССР и Орден "За заслуги перед Отечеством".</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Франко Дзеффирелли -->
+<div class="modal fade" id="franco_zeffirelli-modal" tabindex="-1" role="dialog" aria-labelledby="franco_zeffirelli-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="franco_zeffirelli-modal-label">Фра́нко Дзеффире́лли</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/franco_zeffirelli_2.jpg" class="img-fluid mb-3" alt="Franco Zeffirelli">
+				<p>Франко Дзеффирелли был итальянским режиссером и продюсером, наиболее известным своими экранизациями классических произведений. Он родился во Флоренции, Италия. Дзеффирелли снял такие фильмы, как "Ромео и Джульетта" (1968), "Братские узы" (1977) и "Гамлет" (1990). Он получил несколько наград, включая две премии "Золотой глобус" и Гремми.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Луис Бунюэль -->
+<div class="modal fade" id="luis_bunuel-modal" tabindex="-1" role="dialog" aria-labelledby="luis_bunuel-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="luis_bunuel-modal-label">Луис Бунюэ́ль</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/luis_banuel_2.jpg" class="img-fluid mb-3" alt="Luis Bunuel">
+				<p>Луис Бунюэль был испанским режиссером и сценаристом, известным своими провокационными и экспериментальными фильмами. Он родился в Каланде, Испания. Бунюэль сотрудничал с такими художниками, как Сальвадор Дали и Жан-Клод Карьер. Некоторые из его наиболее известных работ включают фильмы "Собачье сердце" (1929), "Золотое время" (1930) и "Воскресенье Бунюэля" (1959). Бунюэль получил множество престижных наград, включая Золотую пальмовую ветвь на Каннском кинофестивале и Оскар за лучшую режиссуру.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Витторио Де Сика -->
+<div class="modal fade" id="vittorio_de_sica-modal" tabindex="-1" role="dialog" aria-labelledby="vittorio_de_sica-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="vittorio_de_sica-modal-label">Витторио Де Сика</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/de_sika_2.jpg" class="img-fluid mb-3" alt="Vittorio De Sica">
+				<p>Витторио Де Сика был итальянским актером и режиссером, наиболее известным своими неореалистическими фильмами. Он родился в Соренто, Италия. Де Сика снял такие фильмы, как "Велосипедисты" (1948), "Чудо в Милане" (1951) и "Украденные дети" (1949). Он был награжден несколькими Оскарами, включая почётный Оскар за вклад в мировое кино.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Григорий Александров -->
+<div class="modal fade" id="aleksandrov-modal" tabindex="-1" role="dialog" aria-labelledby="aleksandrov-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="aleksandrov-modal-label">Григорий Александров</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/directors/aleksandrov_2.jpg" class="img-fluid mb-3" alt="Grigori Aleksandrov">
+				<p>Григорий Александров был советским режиссером, актером и композитором. Он родился в Ярославле, СССР (ныне Россия). Александров сотрудничал с Сергеем Эйзенштейном и создал ряд важных фильмов советской эпохи, включая "Цирк" (1936) и "Весёлые ребята" (1934). Он получил несколько наград, включая Золотую медаль Каннского кинофестиваля и Сталинскую премию.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- Футер сайта -->
+	<footer class="footer mt-auto py-3">
+		<div class="container text-center">
+			<span class="text-muted">&copy; 2023, Великое наследие искусства</span>
+		</div>
+	</footer>
+
+	<!-- Подключаем Bootstrap JavaScript файлы -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+	<!--
+	<script>
+		// Инициализация модальных окон
+		$(document).ready(function(){
+			$('#luchino-visconti-modal', 'federico-fellini-modal', 'michelangelo-antonioni-modal').modal({
+        	show: false
+    	});
+    	// Добавьте аналогичный код инициализации для каждого окна
+  		});
+	</script>
+	-->
+</body>
+</html>

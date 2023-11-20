@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем Bootstrap CSS файлы -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Художники - Великое наследие искусства</title>
+</head>
+<style>
+  .header-person {
+    color: #40E0D0; /* Код цвета для красного (#FF0000) */
+  }
+  .painting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .painting-image {
+    margin-bottom: 20px;
+  }
+
+  .painting-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .painting-info {
+    margin-bottom: 20px;
+  }
+
+  .painting-info strong {
+    font-weight: bold;
+  }
+
+  .painting-description p {
+    margin-bottom: 0;
+  }
+
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 600px) {
+    .painting-container {
+      padding: 10px;
+    }
+    .painting-image {
+      margin-bottom: 10px;
+    }
+    .painting-title {
+      font-size: 20px;
+    }
+  }
+</style>
+<body>
+	<!-- Шапка сайта -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      	</button>
+      	<div class="collapse navbar-collapse" id="navbarNav">
+       		<ul class="navbar-nav">
+         		<li class="nav-item">
+            		<a class="nav-link" href="directors.html">Режисёры</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="composers.html">Композиторы</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link active" href="artists.html">Художники</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="writers.html">Писатели</a>
+         		</li>
+       		</ul>
+      	</div>
+	</nav>
+
+	<div class="container">
+		<h2 class="text-center text-uppercase header-person">Художники</h2><br><br>
+		<div id="directors-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/botticelli.jpg" class="card-img-top" alt="Sandro Botticelli">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/album/Botticelli" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Сандро Боттичелли</a></h5>
+						<p class="card-text">1445 - 1510</p>
+						<p class="card-text">Итальянский живописец, один из значимых мастеров эпохи итальянского Возрождения, представитель флорентийской школы живописи кватроченто.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#sandro-botticelli-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/da_vinci.jpg" class="card-img-top" alt="Leonardo da Vinci">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/album/Leonardo" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Леонардо да Винчи</a></h5>
+						<p class="card-text">1452 - 1519</p>
+						<p class="card-text">Итальянский художник (живописец, скульптор, архитектор) и учёный, изобретатель, писатель, музыкант, один из крупнейших представителей искусства Возрождения.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#da-vinci-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/carpaccio.jpg" class="card-img-top" alt="Vittore Carpaccio">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/storeroom/310624551/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Витторе Карпаччо</a></h5>
+						<p class="card-text">1465 - 1526</p>
+						<p class="card-text">Итальянский живописец Раннего Возрождения, представитель венецианской школы.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#vittore-carpaccio-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/durer.jpg" class="card-img-top" alt="Albrecht Durer">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/storeroom/825575191/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">А́льбрехт Дю́рер</a></h5>
+						<p class="card-text">1483 - 1520</p>
+						<p class="card-text">Немецкий живописец, рисовальщик и гравёр, один из величайших мастеров западноевропейского искусства эпохи Северного Возрождения.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#albrecht-durer-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/santi.jpeg" class="card-img-top" alt="Raffaello Santi">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/album/Rafael" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Рафаэль Санти</a></h5>
+						<p class="card-text">1471 – 1528</p>
+						<p class="card-text">Итальянский живописец, рисовальщик и архитектор умбрийской, флорентийской, а затем римской школы.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#raffaello-santi-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/buonarroti.jpg" class="card-img-top" alt="Michelangelo Buonarroti">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/album/Michelangelo-Buonarroti" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Микела́нджело Буонарро́ти</a></h5>
+						<p class="card-text">1475 - 1564</p>
+						<p class="card-text">Итальянский скульптор, художник, архитектор, поэт и мыслитель. Один из крупнейших мастеров эпохи Высокого Возрождения и раннего барокко.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#buonarroti-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/artists/tiziano.jpg" class="card-img-top" alt="Tiziano Vecellio">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/album/Titian" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Тициа́н Вече́ллио</a></h5>
+						<p class="card-text">1485 - 1576</p>
+						<p class="card-text">Итальянский живописец, крупнейший представитель венецианской школы эпохи Высокого и Позднего Возрождения.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#tiziano-vecellio-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+				<div class="card h-100">
+					<img src="img/artists/bosch.webp" class="card-img-top" alt="Hieronymus Bosch">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://gallerix.ru/storeroom/1400476940/" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Иероним Босх</a></h5>
+						<p class="card-text">1450 - 1516</p>
+						<p class="card-text">Нидерландский потомственный художник, один из крупнейших мастеров периода Северного Возрождения.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#bosch-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+          </div>
+        </div>
+        <!-- Добавьте необходимое количество carousel-item для остальных режиссеров -->
+      </div>
+      <a class="carousel-control-prev" href="#directors-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#directors-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a class="page-link" href="#directors-carousel" data-slide-to="0">1</a></li>
+      <li class="page-item"><a class="page-link" href="#directors-carousel" data-slide-to="1">2</a></li>
+      <!-- Добавьте необходимое количество page-item для остальных страниц -->
+    </ul>
+	</div>
+
+	<div class="container text-center">
+    <div class="painting-container">
+      <div class="painting-image">
+		  <a href="https://muzei-mira.com/kartini_italia/244-svyatoy-sebastyan-gvido-reni.html" target="_blank">
+        <img src="https://muzei-mira.com/templates/museum/images/paint/svyatoy-sebastyan-gvido-reni+.jpg" alt="Painting 1">
+		  </a>
+      </div>
+      <div class="painting-description">
+        <h2 class="painting-title">Святой Себастьян</h2>
+        <div class="painting-info">
+          <strong>Художник:</strong> Гвидо Рени<br>
+          <strong>Год:</strong> Первая половина XVII века<br>
+          <strong>Техника рисования:</strong> Холст, масло<br>
+        </div>
+		<p>На картине "Святой Себастьян" Гвидо Рени изобразил мученика Святого Себастьяна, страдающего от стрел и покрытого лишьем. Себастьян стоит перед фоном темного неба, выражая свою преданность вере и готовность принести жертву ради своих убеждений.</p>
+      </div>
+    </div>
+		<br><br>
+    <div class="painting-container">
+      <div class="painting-image">
+		  <a href="https://muzei-mira.com/kartini_italia/1771-kartina-sikstinskaya-madonna-rafaelya-santi-1513.html" target="_blank">
+        <img src="https://muzei-mira.com/templates/museum/images/paint/sikstinskaia-madonna-rafael+.jpg" alt="Painting 2">
+			  </a>
+      </div>
+      <div class="painting-description">
+        <h2 class="painting-title">Сикстинская мадонна</h2>
+        <div class="painting-info">
+          <strong>Художник:</strong> Рафаэль Санти<br>
+          <strong>Год:</strong> 1513<br>
+          <strong>Техника рисования:</strong> Холст, масло<br>
+        </div>
+        <p>Сикстинская мадонна, созданная Рафаэлем Санти, является одним из его самых известных произведений. На картине изображена Дева Мария, держащая младенца Иисуса на руках, окруженных ангельскими фигурами. Картина славится своей грациозностью, гармонией и нежностью, а также умелым использованием света и тени.</p>
+      </div>
+    </div>
+<br><br>
+    <div class="painting-container">
+      <div class="painting-image">
+		  <a href="https://muzei-mira.com/kartini_italia/629-yunosha-s-korzinoy-fruktov-mikelandzhelo.html" target="_blank">
+        <img src="https://muzei-mira.com/templates/museum/images/paint/yunosha-s-korzinoy-fruktov-karavadjo+.jpg" alt="Painting 3">
+			  </a>
+      </div>
+      <div class="painting-description">
+        <h2 class="painting-title">Юноша с корзиной фруктов</h2>
+        <div class="painting-info">
+          <strong>Художник:</strong> Микеланджело Караваджо<br>
+          <strong>Год:</strong> 1593<br>
+          <strong>Техника рисования:</strong> Холст, масло<br>
+        </div>
+        <p>"Юноша с корзиной фруктов" Микеланджело Караваджо - это живописный портрет юноши, который держит корзину с разнообразными фруктами. Картина отличается реалистичностью и привлекает внимание своим тщательным изображением деталей и использованием света для создания объема. Юноша смотрит непосредственно на зрителя, что придает произведению интимность и приглашает нас взглянуть на его сокровенные мысли.</p>
+      </div>
+    </div>
+  </div>
+<br><br>
+
+
+
+
+
+<!-- Модальное окно с подробной информацией о Сандро Боттичелли -->
+<div class="modal fade" id="sandro-botticelli-modal" tabindex="-1" role="dialog" aria-labelledby="sandro-botticelli-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="sandro-botticelli-modal-label">Сандро Боттичелли</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/botticelli_2.jpg" class="img-fluid mb-3" alt="Sandro Botticelli">
+				<p>Сандро Боттичелли был итальянским художником эпохи Возрождения. Он родился во Флоренции, Италия. Боттичелли известен своими произведениями, включая "Рождение Венеры" и "Весна". Его стиль характеризуется грациозностью, ритмичностью и символическими элементами. Боттичелли является одним из ключевых представителей итальянской живописи XV века.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Леонардо да Винчи -->
+<div class="modal fade" id="da-vinci-modal" tabindex="-1" role="dialog" aria-labelledby="da-vinci-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="da-vinci-modal-label">Леонардо да Винчи</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/da_vinci_2.jpg" class="img-fluid mb-3" alt="Leonardo da Vinci">
+				<p>Леонардо да Винчи был итальянским художником, ученым и изобретателем. Он родился во Флоренции, Италия. Леонардо был мастером многих областей искусства и науки. Его наиболее известные произведения включают "Мона Лизу" и "Тайная Вечеря". Леонардо был известен своим талантом в создании реалистичных изображений и использовании светотени.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Витторе Карпаччо -->
+<div class="modal fade" id="vittore-carpaccio-modal" tabindex="-1" role="dialog" aria-labelledby="vittore-carpaccio-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="vittore-carpaccio-modal-label">Витторе Карпаччо</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/carpaccio_2.jpg" class="img-fluid mb-3" alt="Vittore Carpaccio">
+				<p>Витторе Карпаччо был итальянским художником эпохи Возрождения. Он родился во Венеции, Италия. Карпаччо работал в различных жанрах, включая живопись, фрески и рисунки. Он наиболее известен своими циклами фресок, особенно серией "Истории Святого Урсулы". Карпаччо использовал насыщенные цвета и детализацию в своих работах.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о А́льбрехт Дю́рер -->
+<div class="modal fade" id="albrecht-durer-modal" tabindex="-1" role="dialog" aria-labelledby="albrecht-durer-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="albrecht-durer-modal-label">А́льбрехт Дю́рер</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/durer_2.jpg" class="img-fluid mb-3" alt="Albrecht Durer">
+				<p>Альбрехт Дюрер был немецким художником, гравером и теоретиком искусства. Он родился в Нюрнберге, Германия. Дюрер считается одним из наиболее влиятельных художников эпохи Возрождения в Северной Европе. Он работал в различных жанрах, включая живопись, гравюры и рисунки. Его произведения отличаются техническим мастерством, детализацией и глубоким изучением перспективы.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Рафаэль Санти -->
+<div class="modal fade" id="raffaello-santi-modal" tabindex="-1" role="dialog" aria-labelledby="raffaello-santi-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="raffaello-santi-modal-label">Рафаэль Санти</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/santi_2.webp" class="img-fluid mb-3" alt="Raffaello Santi">
+				<p>Рафаэль Санти был итальянским художником эпохи Возрождения. Он родился в Урбино, Италия. Рафаэль известен своими произведениями, включая "Школу Афин" и "Сикстинская Мадонна". Его работы характеризуются гармонией, идеальной пропорцией и эмоциональной выразительностью. Рафаэль был одним из ведущих художников эпохи Возрождения в Италии.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Микела́нджело Буонарро́ти -->
+<div class="modal fade" id="buonarroti-modal" tabindex="-1" role="dialog" aria-labelledby="buonarroti-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="buonarroti-modal-label">Микела́нджело Буонарро́ти</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/buonarroti_2.jpg" class="img-fluid mb-3" alt="Michelangelo Buonarroti">
+				<p>Микеланджело Буонарроти был итальянским художником, скульптором, архитектором и поэтом эпохи Возрождения. Он родился в Капрезе, Италия. Микеланджело считается одним из наиболее талантливых художников в истории искусства. Его работы включают скульптуры, такие как "Давид" и "Моисей", а также фрески, среди которых выделяются "Сотворение Адама" на Сикстинской капелле. Микеланджело был известен своим великолепным мастерством и выразительностью своих произведений.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Тициа́н Вече́ллио -->
+<div class="modal fade" id="tiziano-vecellio-modal" tabindex="-1" role="dialog" aria-labelledby="tiziano-vecellio-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="tiziano-vecellio-modal-label">Тициа́н Вече́ллио</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/tiziano_2.jpeg" class="img-fluid mb-3" alt="Tiziano Vecellio">
+				<p>Тициан Вечеллио был итальянским художником эпохи Возрождения и раннего маньеризма. Он родился в Пьеве-ди-Кадоре, Италия. Тициан славится своими портретами и религиозными композициями. Его стиль отличается яркими красками, мягкими переходами и живыми выражениями лиц. Тициан был одним из ведущих художников Венецианской школы и оказал значительное влияние на развитие живописи.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Иероним Босх -->
+<div class="modal fade" id="bosch-modal" tabindex="-1" role="dialog" aria-labelledby="bosch-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="bosch-modal-label">Иероним Босх</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/artists/bosch_2.jpg" class="img-fluid mb-3" alt="Hieronymus Bosch">
+				<p>Иероним Босх был нидерландским художником эпохи Возрождения. Он родился в 'с-Хертогенбосе, Нидерланды. Босх известен своими фантастическими иллюстрациями, в которых он изображал аллегории, моральные притчи и сюрреалистические сцены. Его наиболее известные произведения включают "Сад земных наслаждений" и "Триптих Страшного суда". Стиль Босха отличается детализацией, вниманием к деталям и мистической атмосферой.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- Футер сайта -->
+	<footer class="footer mt-auto py-3">
+		<div class="container text-center">
+			<span class="text-muted">&copy; 2023, Великое наследие искусства</span>
+		</div>
+	</footer>
+
+	<!-- Подключаем Bootstrap JavaScript файлы -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

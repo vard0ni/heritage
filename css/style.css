@@ -1,0 +1,28 @@
+.jumbotron {
+	margin-top: 100px;
+	background-color: #fff;
+}
+
+
+.container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footer {
+	background-color: #343A40;
+}
+
+img {
+	height: 250px;
+	max-width: 100%;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #17A2B8;
+}
+
+body {
+	background-color: #efeae5;
+}
+

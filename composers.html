@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем Bootstrap CSS файлы -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Композиторы - Великое наследие искусства</title>
+</head>
+<style>
+  .header-person {
+    color: #40E0D0; /* Код цвета для красного (#FF0000) */
+  }
+</style>
+<body>
+	<!-- Шапка сайта -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      	</button>
+      	<div class="collapse navbar-collapse" id="navbarNav">
+       		<ul class="navbar-nav">
+         		<li class="nav-item">
+            		<a class="nav-link" href="directors.html">Режисёры</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link active" href="composers.html">Композиторы</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="artists.html">Художники</a>
+         		</li>
+         		<li class="nav-item">
+            		<a class="nav-link" href="writers.html">Писатели</a>
+         		</li>
+       		</ul>
+      	</div>
+	</nav>
+
+	<div class="container">
+		<h2 class="text-center text-uppercase header-person">Композиторы</h2><br><br>
+		<div id="directors-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/verdi.jpg" class="card-img-top" alt="Giuseppe Verdi">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/4074" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Джузеппе Верди</a></h5>
+						<p class="card-text">1813 - 1901</p>
+						<p class="card-text">Итальянский композитор, наиболее известный своими операми.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#giuseppe-verdi-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/donizetti.jpg" class="card-img-top" alt="Gaetano Donizetti">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/8833" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Гаэта́но Донице́тти</a></h5>
+						<p class="card-text">1797 - 1848</p>
+						<p class="card-text">Итальянский оперный композитор, автор 68 опер.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#gaetano-donizetti-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/rachmaninoff.jpg" class="card-img-top" alt="Sergei Rachmaninoff">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/62727" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Сергей Васильевич Рахманинов</a></h5>
+						<p class="card-text">1873 - 1943</p>
+						<p class="card-text">Русский композитор, пианист, дирижёр.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#sergei-rachmaninoff-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/bizet.jpeg" class="card-img-top" alt="Georges Bizet">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/8814" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Жорж Бизе</a></h5>
+						<p class="card-text">1838 – 1875</p>
+						<p class="card-text">Французский композитор периода романтизма, автор оркестровых произведений, романсов, фортепианных пьес, а также опер, самой известной из которых стала «Кармен».</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#georges-bizet-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Карточки режиссеров -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/chopin.jpg" class="card-img-top" alt="Frederic Chopin">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/6645" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Фридери́к Шопе́н</a></h5>
+						<p class="card-text">1810 – 1849</p>
+						<p class="card-text">Польский композитор и пианист-виртуоз романтического периода, писавший в основном для соло фортепиано.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#frederic-chopin-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/liszt.jpg" class="card-img-top" alt="Liszt">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/9636" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Фе́ренц Лист</a></h5>
+						<p class="card-text">1811 – 1886</p>
+						<p class="card-text">Венгро-немецкий композитор, пианист, педагог, дирижёр, публицист, крупный представитель музыкального романтизма.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#liszt-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+					<img src="img/composers/wagner.jpg" class="card-img-top" alt="Richard Wagner">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/27958" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Рихард Вагнер</a></h5>
+						<p class="card-text">1813 – 1883</p>
+						<p class="card-text">Немецкий композитор, дирижёр. Крупнейший реформатор оперы, оказавший значительное влияние на европейскую музыкальную культуру, особенно немецкую.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#richard-wagner-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+				<div class="card h-100">
+					<img src="img/composers/haydn.jpg" class="card-img-top" alt="Joseph Haydn">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title"><a href="https://music.yandex.ru/artist/48039" target="_blank" style="color:#17A2B8;font-size: 16px;font-weight: bold">Йо́зеф Гайдн</a></h5>
+						<p class="card-text">1732 – 1809</p>
+						<p class="card-text">Австрийский композитор, представитель венской классической школы, один из основоположников таких музыкальных жанров, как симфония и струнный квартет.</p>
+						<div class="mt-auto">
+						<button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#joseph-haydn-modal">
+							Подробнее
+						</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+          </div>
+        </div>
+        <!-- Добавьте необходимое количество carousel-item для остальных режиссеров -->
+      </div>
+      <a class="carousel-control-prev" href="#directors-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#directors-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a class="page-link" href="#directors-carousel" data-slide-to="0">1</a></li>
+      <li class="page-item"><a class="page-link" href="#directors-carousel" data-slide-to="1">2</a></li>
+      <!-- Добавьте необходимое количество page-item для остальных страниц -->
+    </ul>
+	</div>
+
+	<div class="container">
+		<h2>Услада для ушей</h2> <br>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h4>Turandot, Act III: Nessun dorma! - Giuseppe Giacomini, Джакомо Пуччини</h4>
+		  <img src="https://avatars.yandex.net/get-music-content/119639/8782af7b.a.8751635-1/200x200" alt="Giacomini" class="img-fluid">
+        <audio controls>
+          <source src="music/turandot.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио элемент.
+        </audio>
+      </div>
+      <div class="col-md-6">
+        <h4>Libiamo, libiamo - Franco Bonisolli, Джузеппе Верди</h4>
+		  <img src="https://avatars.yandex.net/get-music-content/49707/584f67a9.a.159740-1/200x200" alt="Bonisolli" class="img-fluid">
+        <audio controls>
+          <source src="music/libiamo.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио элемент.
+        </audio>
+      </div>
+    </div>
+		<div class="row mb-4">
+      <div class="col-md-6">
+        <h4>Zimmer: Il Gladiatore - Luciano Pavarotti</h4>
+		  <img src="https://avatars.yandex.net/get-music-content/2810397/08828cc7.a.10448684-1/200x200" alt="Pavarotti" class="img-fluid">
+        <audio controls>
+          <source src="music/pavarotti.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио элемент.
+        </audio>
+      </div>
+      <div class="col-md-6">
+        <h4>Prelude in G Minor, Op. 23, No. 5 - Рахманинов</h4>
+		  <img src="https://avatars.yandex.net/get-music-content/63210/ba3fc62f.a.1711110-1/200x200" alt="Рахманинов" class="img-fluid">
+        <audio controls>
+          <source src="music/rachmaninoff.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио элемент.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Модальное окно с подробной информацией о Джузеппе Верди -->
+<div class="modal fade" id="giuseppe-verdi-modal" tabindex="-1" role="dialog" aria-labelledby="giuseppe-verdi-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="giuseppe-verdi-modal-label">Джузеппе Верди</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/verdi_2.jpg" class="img-fluid mb-3" alt="Giuseppe Verdi">
+				<p>Джузеппе Верди был итальянским композитором, одним из наиболее известных оперных композиторов в истории музыки. Он родился в Ронколе, Италия. Верди написал множество популярных опер, включая "Травиату" (1853), "Риголетто" (1851) и "Аида" (1871). Его музыка отличается эмоциональностью, драматизмом и мелодичностью. Верди считается одним из ключевых представителей итальянской оперной традиции.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Гаэта́но Донице́тти -->
+<div class="modal fade" id="gaetano-donizetti-modal" tabindex="-1" role="dialog" aria-labelledby="gaetano-donizetti-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="gaetano-donizetti-modal-label">Гаэта́но Донице́тти</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/donizetti_2.jpeg" class="img-fluid mb-3" alt="Gaetano Donizetti">
+				<p>Гаэтано Доницетти был итальянским композитором, наиболее известным своими операми. Он родился в Бергамо, Италия. Доницетти написал более 70 опер, включая "Любовный напиток" (1832), "Лючия ди Ламмермур" (1835) и "Дон Паскуале" (1843). Его музыка характеризуется изяществом, лиричностью и изобретательностью. Доницетти считается одним из величайших итальянских оперных композиторов первой половины XIX века.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Сергей Рахманинов -->
+<div class="modal fade" id="sergei-rachmaninoff-modal" tabindex="-1" role="dialog" aria-labelledby="sergei-rachmaninoff-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="sergei-rachmaninoff-modal-label">Сергей Васильевич Рахманинов</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/rachmaninoff_2.jpg" class="img-fluid mb-3" alt="Sergei Rachmaninoff">
+				<p>Сергей Рахманинов был русским композитором, пианистом и дирижером. Он родился в Семёнове, Россия. Рахманинов известен своими романтическими и эмоциональными произведениями, включая его концерты для фортепиано, симфонии и оперу "Алеко" (1892). Он также был одним из величайших пианистов своего времени. Рахманинов считается одним из величайших композиторов конца XIX - начала XX века.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Жорж Бизе -->
+<div class="modal fade" id="georges-bizet-modal" tabindex="-1" role="dialog" aria-labelledby="georges-bizet-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="georges-bizet-modal-label">Жорж Бизе</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/bizet_carmen.jpg" class="img-fluid mb-3" alt="Georges Bizet">
+				<p>Жорж Бизе был французским композитором, известным своими операми и оркестровыми произведениями. Он родился в Париже, Франция. Бизе написал такие известные оперы, как "Кармен" (1875), "Ромео и Джульетта" (1867) и "Пеший полк" (1868). Его музыка отличается яркостью, эмоциональностью и виртуозностью. Бизе считается одним из величайших французских композиторов XIX века.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Фридери́к Шопе́н -->
+<div class="modal fade" id="frederic-chopin-modal" tabindex="-1" role="dialog" aria-labelledby="frederic-chopin-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="frederic-chopin-modal-label">Фридери́к Шопе́н</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/chopin_2.jpg" class="img-fluid mb-3" alt="Frederic Chopin">
+				<p>Фридерик Шопен был польским композитором и пианистом, одним из наиболее известных и влиятельных композиторов романтической эпохи. Он родился в Жельезове Воле, Польша. Шопен прославился своими произведениями для фортепиано, включаясвои прелюдии, этюды, мазурки и баллады. Его музыка характеризуется изысканностью, эмоциональностью и виртуозностью. Шопен считается одним из величайших композиторов для фортепиано в истории музыки.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Фе́ренц Лист -->
+<div class="modal fade" id="liszt-modal" tabindex="-1" role="dialog" aria-labelledby="liszt-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="liszt-modal-label">Фе́ренц Лист</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/liszt_2jpg" class="img-fluid mb-3" alt="Liszt">
+				<p>Ференц Лист был венгерским композитором, пианистом и дирижером, одним из наиболее влиятельных композиторов XIX века. Он родился в Раиденбурге, Венгрия. Лист написал множество произведений для фортепиано, оркестра и хора. Его музыка отличается виртуозностью, страстностью и инновационным подходом к композиции. Лист также сыграл важную роль в развитии пианистической техники. Он считается одним из основателей современной виртуозной школы фортепиано.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Йо́зеф Гайдн -->
+<div class="modal fade" id="joseph-haydn-modal" tabindex="-1" role="dialog" aria-labelledby="joseph-haydn-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="joseph-haydn-modal-label">Йо́зеф Гайдн</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/haydn_2.jpg" class="img-fluid mb-3" alt="Joseph Haydn">
+				<p>Йозеф Гайдн был австрийским композитором, одним из наиболее влиятельных композиторов классической эпохи. Он родился в Роухе, Австрия. Гайдн написал более 100 симфоний, опер, камерных и инструментальных произведений. Его музыка отличается яркостью, изобретательностью и чувством юмора. Гайдн считается одним из основателей симфонической формы и одним из величайших композиторов своего времени.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Модальное окно с подробной информацией о Рихард Вагнер -->
+<div class="modal fade" id="richard-wagner-modal" tabindex="-1" role="dialog" aria-labelledby="richard-wagner-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="richard-wagner-modal-label">Рихард Вагнер</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/composers/wagner_2.jpeg" class="img-fluid mb-3" alt="Richard Wagner">
+				<p>Рихард Вагнер был немецким композитором, дирижером и теоретиком музыки. Он родился в Лейпциге, Германия. Вагнер известен своими операми, включая "Тристан и Изольда" (1859) и "Кольцо Нибелунга" (1876). Его музыка характеризуется драматизмом, гармонической сложностью и использованием лейтмотивов. Вагнер считается одним из наиболее влиятельных композиторов в истории музыки и ключевой фигурой в развитии оперного искусства.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- Футер сайта -->
+	<footer class="footer mt-auto py-3">
+		<div class="container text-center">
+			<span class="text-muted">&copy; 2023, Великое наследие искусства</span>
+		</div>
+	</footer>
+
+	<!-- Подключаем Bootstrap JavaScript файлы -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
